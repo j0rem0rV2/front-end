@@ -1,0 +1,60 @@
+//cores, títulos, textos gerais, links e regras do body
+
+$bg_color: #040714;
+$main_text:silver;
+$secondary_text: #f9f9f9;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: $bg_color;
+}
+
+
+@mixin text ($fontSize:16px ) {
+    font-size:$fontSize;
+    line-height: $fontSize + 10px;
+    color: $main_text
+}
+
+.text--small {
+    @include text(12px)
+}
+
+.text{
+    @include text;
+}
+
+.text--big {
+    @include text(18px)
+}
+
+
+@mixin title($fontSize:40px){
+    @include text($fontSize);
+    color:$secondary_text;
+}
+
+.title--small{
+    @include title(28px);
+}
+
+.title{
+    @include title;
+}
+
+.title--big{
+    @include title(40px);
+}
+
+
+.link-text{
+    @include text(18px);
+    color: $secondary_text;
+    text-decoration: underline;
+}

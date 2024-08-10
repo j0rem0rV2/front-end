@@ -1,0 +1,23 @@
+{
+  "name": "exercicios_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass source/style.scss build/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j0rem0rV2/exercicios_sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j0rem0rV2/exercicios_sass/issues"
+  },
+  "homepage": "https://github.com/j0rem0rV2/exercicios_sass#readme",
+  "devDependencies": {
+    "sass": "^1.77.2"
+  }
+}
